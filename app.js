@@ -4,14 +4,7 @@ const mongoose=require('mongoose')
 const PORT=5004
 const {MONGOURI}=require('./security/keys/keys')
 
-// SCHEMA MODELS
-require('./usermodels/users')
-require('./usermodels/posts/postmodel')
 
-//Routes for 
-app.use(express.json())
-app.use(require('./routes/auth'))
-app.use(require('./routes/post'))
 
 mongoose.connect(MONGOURI,{
     useNewUrlParser:true,
@@ -24,6 +17,16 @@ mongoose.connection.on('connected',()=>{
 mongoose.connection.on('error',()=>{
     console.log("Error occured")
 })
+
+// SCHEMA MODELS
+require('./usermodels/users')
+require('./usermodels/posts/postmodel')
+
+//Routes for 
+app.use(express.json())
+app.use(require('./routes/auth'))
+app.use(require('./routes/post'))
+
 const signupMiddleware=(req,res,next)=>{
     console.log("middleware executed")
 }
