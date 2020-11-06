@@ -3,12 +3,13 @@ const router=express.Router()
 const mongoose=require('mongoose')
 const User= mongoose.model("User")
 const bcrypt= require('bcryptjs')
+const authenticateUser=require('../middlewares/loginmiddleware')
 
 // for generating token
 const jwt=require('jsonwebtoken') 
-const{JWT_SECRET}=require('../keys')
+const{JWT_SECRET}=require('../keys/keys')
 
-router.get('/',(req,res)=>{
+router.get('/access',authenticateUser,(req,res)=>{
     res.send("hello from auth")
 })
 
