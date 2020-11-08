@@ -1,6 +1,11 @@
 ###################RADAR####################### 
-For database: MONGODB 
-SERVER FOLDER:
+
+
+
+-->For database: MONGODB 
+
+
+-->SERVER FOLDER:
 
 in server folder go to security/keys add 
 $ touch keys.js
