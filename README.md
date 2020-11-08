@@ -1,3 +1,44 @@
+###################RADAR####################### 
+For database: MONGODB 
+SERVER FOLDER:
+
+in server folder go to security/keys add 
+$ touch keys.js
+add below lines in it
+
+module.exports={
+    MONGOURI:"mongodb+srv://<username>:<password>@instagram-main.dmhku.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    JWT_SECRET:"<yoursecretKey>",
+    SECRET_KEY:"<yourSecretKey>"
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
