@@ -12,9 +12,9 @@ $ touch keys.js
 add below lines in it
 
 module.exports={
-    MONGOURI:"mongodb+srv://<username>:<password>@instagram-main.dmhku.mongodb.net/<dbname>?retryWrites=true&w=majority",
-    JWT_SECRET:"<yoursecretKey>",
-    SECRET_KEY:"<yourSecretKey>"
+    MONGOURI:"mongodb+srv://"username":"password"@instagram-main.dmhku.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    JWT_SECRET:"yoursecretKey",
+    SECRET_KEY:"yourSecretKey"
 
 }
 
